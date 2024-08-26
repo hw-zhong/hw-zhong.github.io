@@ -1,6 +1,16 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
+header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
 .box {
     background-color: #567895;
     border: 2px solid #0b385f;
@@ -13,6 +23,19 @@ h1 {
   font-size: 2em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   border-bottom: 1px solid #375e97;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+.profile-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 h2 {
@@ -30,4 +53,54 @@ a:link, a:visited {
 
 a:hover {
   text-decoration: none;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.skills, .projects, .contact {
+  margin-bottom: 40px;
+}
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+.skills ul li {
+  background-color: #333;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.projects .project {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.projects .project h3 {
+  margin-top: 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form input, .contact form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact form button:hover {
+  background-color: #555;
 }
